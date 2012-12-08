@@ -1,5 +1,6 @@
 """ rock-paper-scissors-lizard-spock
 	program accepts one of the above inputs and returns a result
+	return is win/lose/draw
 """
 
 def rpsls(choice):	
