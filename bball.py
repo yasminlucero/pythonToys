@@ -2,6 +2,8 @@
 ## two games: G1 is a single shots, G2 is 2 out of 3 shots
 ## accepts probability of making a hoop
 ## returns whether you are more likely to win at Game 2 than Game 1
+## Dec 3 2012
+## contact: yasmin.lucero@gmail.com
 
 def G2wins(p):
     try:
