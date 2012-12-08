@@ -1,7 +1,8 @@
 ## basketball simulation
 ## two games: G1 is a single shots, G2 is 2 out of 3 shots
 ## accepts probability of making a hoop
-## returns whether you are more likely to win at Game 2 than Game 1
+## returns whether you win more at Game 2 than Game 1
+## simulation to verify a probabilistic argument in favor of G2 when p>1/2
 ## Dec 3 2012
 ## contact: yasmin.lucero@gmail.com
 
