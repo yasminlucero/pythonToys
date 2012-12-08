@@ -1,6 +1,6 @@
 ## coin change problem
 ## exercise
-## accepts a dollar amount, and optionally a flag for whether 50 cent peices are available
+## accepts a dollar amount, and optionally a flag for whether 50 cent pieces are available
 ## changemaker returns the coins needed to make change
 ## minCoins returns the minimum number of coins
 ## contact: yasmin.lucero@gmail.com
