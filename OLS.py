@@ -1,5 +1,5 @@
 ## OLS
-##
+## Work in Progress
 
 def RSS(a,b,x,y):
 # given two parameters and a list of x values, return y values
