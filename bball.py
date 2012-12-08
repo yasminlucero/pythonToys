@@ -6,7 +6,7 @@
 ## Dec 3 2012
 ## contact: yasmin.lucero@gmail.com
 
-def G2wins(p):
+def G2wins(p, iterations=10000, tol=0.01):
     try:
         import numpy.random as rand
         rand_loaded = True
@@ -16,8 +16,6 @@ def G2wins(p):
     elif p==0: print "Strategy irrelevant; always lose both games when p=0"
     elif p==1: print "Strategy irrelevant; always win both games when p=1"
     else:
-        iterations = 10000
-        tol = 0.01
         G1 = rand.binomial(1, p, size=iterations).sum()
         G2 = rand.binomial(3, p, size=iterations)
         G2 = (G2 >= 2).sum()
