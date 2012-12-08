@@ -1,4 +1,8 @@
 ## basketball simulation
+## two games: G1 is a single shots, G2 is 2 out of 3 shots
+## accepts probability of making a hoop
+## returns whether you are more likely to win at Game 2 than Game 1
+
 def G2wins(p):
     try:
         import numpy.random as rand
