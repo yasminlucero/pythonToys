@@ -1,19 +1,25 @@
 """ rock-paper-scissors-lizard-spock
 	program accepts one of the above inputs and returns a result
-	return is win/lose/draw
-	
-	A work in progress
+	returns score, a value of -1/0/1	
 """
-
 def rpsls(choice):	
-	if choice== "rock": 
-		Dictionary = {'lizard':0, 'spock':1, 'rock':2, 'paper':3, 'scissors':4}		
-	elif choice== "paper": 
-		Dictionary = {'spock':0, 'rock':1, 'paper':2, 'scissors':3, 'lizard':4}
-	elif choice== "scissors": 
-		Dictionary = {'rock':0, 'paper':1, 'scissors':2, 'lizard':3, 'spock':4}	
-	elif choice== "lizard": 
-		Dictionary = {'paper':0, 'scissors':1, 'lizard':2, 'spock':3, 'rock':4}
-	elif choice== "spock": 
-		Dictionary = {'scissors':0, 'lizard':1, 'spock':2, 'rock':3, 'paper':4}
-	print Dictionary
+    name2num = {"rock":0, "paper":2, "scissors":4, "lizard":3, "spock":1}    
+    num2name = {0:"rock", 2:"paper", 4:"scissors", 3:"lizard", 1:"spock"}    
+    try: choiceNum = name2num[choice]
+    except: TypeError
+    try:import random as rand
+    except: ImportError
+    responseNum = rand.randint(0,4)
+    response = num2name[responseNum]
+    print 'computer chooses ' + response
+    outcome = ((choiceNum-responseNum) % 5) > 2
+    if outcome: 
+        print "you lose" 
+        score = -1
+    elif choiceNum==responseNum: 
+        print "tie"
+        score = 0
+    else: 
+        print "you win"
+        score = 1
+    return score
