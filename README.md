@@ -1,7 +1,9 @@
 pythonToys
 ==========
 
-Group of toy codes in Python.
+Group of toy codes in Python. Used for warm-ups, to illustrate common concepts, teaching 
+and 
+general fun. 
 
 bball.py - a simulation comparing two basketball games, which one will you win given the probability 'p' of making a hoop
 
